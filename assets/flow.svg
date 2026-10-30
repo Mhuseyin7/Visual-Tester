@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 150" width="960" height="150" role="img" aria-label="İş akışı: Keşif, Tarama, Saldırı, Kanıt, Düzeltme, Doğrulama, Karar">
+  <style>
+    .bg { fill: #0b1020; }
+    .node rect { fill: #111a33; stroke: #334155; stroke-width: 2; animation: glow 7s ease-in-out infinite; }
+    .node text { font: 600 14px "Segoe UI", Inter, Helvetica, Arial, sans-serif; fill: #e2e8f0; text-anchor: middle; }
+    .node .num { font: 700 11px ui-monospace, Consolas, monospace; fill: #64748b; }
+    .n2 rect { animation-delay: 1s; } .n3 rect { animation-delay: 2s; } .n4 rect { animation-delay: 3s; }
+    .n5 rect { animation-delay: 4s; } .n6 rect { animation-delay: 5s; } .n7 rect { animation-delay: 6s; }
+    @keyframes glow { 0%,20%,100% { stroke: #334155; fill: #111a33; } 6%,12% { stroke: #5eead4; fill: #0f2a2e; } }
+    .arrow { stroke: #475569; stroke-width: 2; fill: none; stroke-dasharray: 4 5; animation: flow 1s linear infinite; }
+    @keyframes flow { to { stroke-dashoffset: -9; } }
+    .dot { fill: #5eead4; animation: travel 7s linear infinite; }
+    @keyframes travel { 0% { transform: translateX(0); } 100% { transform: translateX(828px); } }
+  </style>
+  <rect class="bg" width="960" height="150" rx="16"/>
+  <g transform="translate(18,45)">
+    <path class="arrow" d="M112 30H138 M250 30H276 M388 30H414 M526 30H552 M664 30H690 M802 30H828"/>
+    <circle class="dot" cx="56" cy="76" r="4"/>
+    <g class="node n1"><rect x="0" y="0" width="112" height="60" rx="12"/><text class="num" x="56" y="20">0-1</text><text x="56" y="42">Keşif</text></g>
+    <g class="node n2" transform="translate(138,0)"><rect width="112" height="60" rx="12"/><text class="num" x="56" y="20">2</text><text x="56" y="42">Tarama</text></g>
+    <g class="node n3" transform="translate(276,0)"><rect width="112" height="60" rx="12"/><text class="num" x="56" y="20">3</text><text x="56" y="42">Saldırı</text></g>
+    <g class="node n4" transform="translate(414,0)"><rect width="112" height="60" rx="12"/><text class="num" x="56" y="20">4</text><text x="56" y="42">Kanıt</text></g>
+    <g class="node n5" transform="translate(552,0)"><rect width="112" height="60" rx="12"/><text class="num" x="56" y="20">5 · onay</text><text x="56" y="42">Düzeltme</text></g>
+    <g class="node n6" transform="translate(690,0)"><rect width="112" height="60" rx="12"/><text class="num" x="56" y="20">5-6</text><text x="56" y="42">Doğrulama</text></g>
+    <g class="node n7" transform="translate(828,0)"><rect width="96" height="60" rx="12"/><text class="num" x="48" y="20">7-8</text><text x="48" y="42">Karar</text></g>
+  </g>
+</svg>
