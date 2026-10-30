@@ -1,0 +1,3 @@
+.visual-tester/
+node_modules/
+*.log
